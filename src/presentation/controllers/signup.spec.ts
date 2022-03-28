@@ -1,8 +1,7 @@
-import { InvalidParamError } from '../errors/invalid-param-error'
-import { MissingParamError } from '../errors/missing-param-error'
+
 import { SignUpController } from './SignUp'
 import { EmailValidator } from '../protocols/email-validator'
-import { ServerError } from '../errors/server-error'
+import { ServerError, InvalidParamError, MissingParamError } from '../errors/'
 
 interface SutType{
   sut: SignUpController
