@@ -66,6 +66,6 @@ describe('DbAddAccount Usecase', () => {
 
     const accountData = { name: 'valid_name', email: 'valid_email', password: 'Hashed_password' }
     const result = await sut.add(accountData)
-    expect(result).toEqual({ id: 'valid_id', name: 'valid_name', email: 'valid_email', password: 'Hashed_password' })
+    expect(result).toEqual({ id: 'valid_id', name: 'valid_name', email: 'valid_email', password: 'Hashed_value' })
   })
 })

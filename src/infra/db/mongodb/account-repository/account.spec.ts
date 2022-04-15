@@ -2,8 +2,9 @@ import { MongoHelper } from '../helpers/mongo-helper'
 import { AccountMongoRepository } from './account'
 describe('Account mongo repository', () => {
   beforeAll(async () => {
-    await MongoHelper.connect(process.env.MONGO_URL as string)
+    await MongoHelper.connect(`${process.env.MONGO_URL as string}teste`)
   })
+
   afterAll(async () => {
     await MongoHelper.disconnect()
   })
@@ -13,7 +14,7 @@ describe('Account mongo repository', () => {
     return sut
   }
   beforeEach(async () => {
-    const accountCollection = MongoHelper.getCollection('accounts')
+    const accountCollection = await MongoHelper.getCollection('accounts')
     await accountCollection.deleteMany({})
   })
   test('should return an account on success', async () => {
