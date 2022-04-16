@@ -2,7 +2,7 @@ import { MongoHelper } from '../helpers/mongo-helper'
 import { AccountMongoRepository } from './account'
 describe('Account mongo repository', () => {
   beforeAll(async () => {
-    await MongoHelper.connect(`${process.env.MONGO_URL as string}teste`)
+    await MongoHelper.connect(`${process.env.MONGO_URL}teste`)
   })
 
   afterAll(async () => {

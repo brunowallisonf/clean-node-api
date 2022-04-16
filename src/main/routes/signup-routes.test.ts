@@ -3,7 +3,7 @@ import app from '../config/app'
 import { MongoHelper } from '../../infra/db/mongodb/helpers/mongo-helper'
 describe('', () => {
   beforeAll(async () => {
-    await MongoHelper.connect(`${process.env.MONGO_URL as string}teste`)
+    await MongoHelper.connect(`${process.env.MONGO_URL}teste`)
   })
   afterAll(async () => {
     await MongoHelper.disconnect()
