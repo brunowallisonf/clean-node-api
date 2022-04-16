@@ -13,7 +13,7 @@ export const MongoHelper = {
     })
   },
   async disconnect () {
-    await this.client.close()
+    await this.client?.close()
     this.client = null
     this.isConnected = false
   },
