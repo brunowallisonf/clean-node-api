@@ -3,7 +3,7 @@ import { Controller, HttpRequest, HttpResponse } from '../../presentation/protoc
 import { LogControllerDecorator } from './log'
 const makeControllerStub = (): Controller => {
   class ControllerStub implements Controller {
-    async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
+    async handle (_httpRequest: HttpRequest): Promise<HttpResponse> {
       return {
         statusCode: 200,
         body: {
@@ -33,5 +33,25 @@ describe('LogController decorator', () => {
     }
     await sut.handle(httpRequest)
     expect(callSpy).toHaveBeenCalledWith(httpRequest)
+  })
+  test('Should return the same result as the controller', async () => {
+    const { sut } = makeSut()
+
+    const httpRequest = {
+      body: {
+        email: 'any_email@mail.com',
+        name: 'any_name',
+        password: 'any_password',
+        passwordConfirmation: 'any_password'
+      }
+    }
+    const httpResponse = await sut.handle(httpRequest)
+
+    expect(httpResponse).toEqual({
+      statusCode: 200,
+      body: {
+        ok: 'true'
+      }
+    })
   })
 })
