@@ -23,13 +23,13 @@ export class LoginController implements Controller {
         return badRequest(new InvalidParamError('email'))
       }
       const { email, password } = httpRequest.body
-      const token = await this.authentication.auth(email, password)
-      if (!token) {
+      const accessToken = await this.authentication.auth(email, password)
+      if (!accessToken) {
         return unauthorized()
       }
       return {
         statusCode: 200,
-        body: {}
+        body: { accessToken }
       }
     } catch (error) {
       return serverError(error)
