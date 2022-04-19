@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1650148448559" clover="3.2.0">
-  <project timestamp="1650148448559" name="All files">
-    <metrics statements="336" coveredstatements="260" conditionals="55" coveredconditionals="35" methods="41" coveredmethods="28" elements="432" coveredelements="323" complexity="0" loc="336" ncloc="336" packages="20" files="36" classes="36"/>
+<coverage generated="1650153309119" clover="3.2.0">
+  <project timestamp="1650153309119" name="All files">
+    <metrics statements="377" coveredstatements="295" conditionals="63" coveredconditionals="41" methods="44" coveredmethods="30" elements="484" coveredelements="366" complexity="0" loc="377" ncloc="377" packages="21" files="38" classes="38"/>
     <package name="data.protocols">
       <metrics statements="12" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="add-account-repository.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/data/protocols/add-account-repository.ts">
@@ -68,7 +68,7 @@
       </file>
     </package>
     <package name="domain.usecases">
-      <metrics statements="11" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="14" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="add-account.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/domain/usecases/add-account.ts">
         <metrics statements="11" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -82,6 +82,12 @@
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
+      </file>
+      <file name="authentication.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/domain/usecases/authentication.ts">
+        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
       </file>
     </package>
     <package name="infra.criptography">
@@ -252,9 +258,9 @@
       </file>
     </package>
     <package name="main.decorators">
-      <metrics statements="19" coveredstatements="19" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <metrics statements="19" coveredstatements="17" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="log.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/decorators/log.ts">
-        <metrics statements="19" coveredstatements="19" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <metrics statements="19" coveredstatements="17" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -262,17 +268,17 @@
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="14" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
       </file>
     </package>
@@ -345,6 +351,49 @@
         <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="presentation.controllers.login">
+      <metrics statements="37" coveredstatements="37" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
+      <file name="login.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/presentation/controllers/login/login.ts">
+        <metrics statements="37" coveredstatements="37" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="11" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="24" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
       </file>
     </package>
     <package name="presentation.controllers.signup">
@@ -454,15 +503,15 @@
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
       </file>
     </package>
     <package name="presentation.protocols">
-      <metrics statements="17" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <metrics statements="18" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="controller.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/presentation/protocols/controller.ts">
         <metrics statements="5" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -488,9 +537,10 @@
         <line num="7" count="0" type="stmt"/>
       </file>
       <file name="index.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/presentation/protocols/index.ts">
-        <metrics statements="2" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
       </file>
     </package>
     <package name="utils">
