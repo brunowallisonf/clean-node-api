@@ -1,7 +1,7 @@
 
 import { SignUpController } from './SignUp'
 import { EmailValidator, HttpRequest, Validation } from './signup-protocols'
-import { InvalidParamError, MissingParamError } from '../../errors/'
+import { MissingParamError } from '../../errors/'
 import { AddAccount, AddAccountModel } from '../../../domain/usecases/add-account'
 import { AccountModel } from '../../../domain/models/account'
 import { serverError, badRequest, ok } from '../../helpers/http-helper'
@@ -50,7 +50,7 @@ const maketSut = (): SutType => {
   const emailValidator = makeEmailValidator()
   const addAccountStub = makeAddAcount()
   const validationStub = makeValidation()
-  const sut = new SignUpController(emailValidator, addAccountStub, validationStub)
+  const sut = new SignUpController(addAccountStub, validationStub)
 
   return {
     sut,
@@ -69,31 +69,6 @@ const makeAddAcount = (): AddAccount => {
   return new AddAccountStub()
 }
 describe('Signup controller', () => {
-  test('Should return 400 if an invalid email is provided', async () => {
-    const { sut, emailValidator } = maketSut()
-    jest.spyOn(emailValidator, 'isValid').mockReturnValueOnce(false)
-    const httpRequest = makeHttpRequest()
-    const httpRespose = await sut.handle(httpRequest)
-
-    expect(httpRespose).toEqual(badRequest(new InvalidParamError('email')))
-  })
-  test('Should call correct emailValidator with correct email', async () => {
-    const { sut, emailValidator } = maketSut()
-    const isValidSpy = jest.spyOn(emailValidator, 'isValid')
-
-    const httpRequest = makeHttpRequest()
-    await sut.handle(httpRequest)
-
-    expect(isValidSpy).toHaveBeenCalledWith('any_email@example.com')
-  })
-  test('Should return error 500 if EmailValidator throws', async () => {
-    const { sut, emailValidator } = maketSut()
-    jest.spyOn(emailValidator, 'isValid').mockImplementationOnce(() => { throw new Error() })
-    const httpRequest = makeHttpRequest()
-    const httpResponse = await sut.handle(httpRequest)
-    expect(httpResponse.statusCode).toBe(500)
-    expect(httpResponse).toEqual(serverError(new Error()))
-  })
   test('Should call addAccount with correct values', async () => {
     const { sut, addAccountStub } = maketSut()
 
