@@ -284,7 +284,7 @@
     </package>
     <package name="main.factories">
       <metrics statements="30" coveredstatements="30" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
-      <file name="signup-validation.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/signup-validation.ts">
+      <file name="login-validation.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/login-validation.ts">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
