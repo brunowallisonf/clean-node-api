@@ -99,4 +99,9 @@ describe('db-authentication.ts', function () {
     jest.spyOn(tokenGeneratorStub, 'generate').mockImplementationOnce(async () => await Promise.reject(new Error()))
     await expect(sut.auth(makeFakeAuthentication())).rejects.toThrow()
   })
+  test('should return the token if success', async function () {
+    const { sut } = makeSut()
+    const accessToken = await sut.auth(makeFakeAuthentication())
+    expect(accessToken).toEqual('any_token')
+  })
 })
