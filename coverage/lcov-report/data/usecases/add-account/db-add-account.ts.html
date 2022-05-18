@@ -96,11 +96,11 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
-import { AddAccount, AddAccountModel, Encrypter, AccountModel, AddAccountRepository } from './db-add-account-protocols'
+import { AddAccount, AddAccountModel, Hasher, AccountModel, AddAccountRepository } from './db-add-account-protocols'
 export class DbAddAccount implements AddAccount {
-  private readonly encrypter: Encrypter
+  private readonly encrypter: Hasher
   private readonly addAccountRepository: AddAccountRepository
-  constructor (encrypter: Encrypter, addAccountRepository: AddAccountRepository) {
+  constructor (encrypter: Hasher, addAccountRepository: AddAccountRepository) {
     this.encrypter = encrypter
     this.addAccountRepository = addAccountRepository
   }
