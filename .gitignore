@@ -101,7 +101,7 @@ typings/
 
 .next
 
-# Nuxt.js build / generate output
+# Nuxt.js build / encrypt output
 
 .nuxt
 dist
