@@ -32,7 +32,7 @@ BRF:1
 BRH:0
 end_of_record
 TN:
-SF:src/data/protocols/load-account-by-email-repository.ts
+SF:src/data/protocols/loadByEmail-account-by-email-repository.ts
 FN:1,(empty-report)
 FNF:1
 FNH:0

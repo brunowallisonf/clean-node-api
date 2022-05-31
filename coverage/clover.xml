@@ -19,7 +19,7 @@
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
       </file>
-      <file name="load-account-by-email-repository.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/data/protocols/load-account-by-email-repository.ts">
+      <file name="loadByEmail-account-by-email-repository.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/data/protocols/loadByEmail-account-by-email-repository.ts">
         <metrics statements="5" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
