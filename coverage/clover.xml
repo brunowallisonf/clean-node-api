@@ -43,7 +43,7 @@
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
       </file>
-      <file name="db-add-account.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/data/usecases/add-account/db-add-account.ts">
+      <file name="db-add-account-mongo-repository.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/data/usecases/add-account/db-add-account-mongo-repository.ts">
         <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -85,7 +85,7 @@
     </package>
     <package name="domain.models">
       <metrics statements="6" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="account.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/domain/models/account.ts">
+      <file name="account-mongo-repository.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/domain/models/account-mongo-repository.ts">
         <metrics statements="6" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -97,7 +97,7 @@
     </package>
     <package name="domain.usecases">
       <metrics statements="19" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="add-account.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/domain/usecases/add-account.ts">
+      <file name="add-account-mongo-repository.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/domain/usecases/add-account-mongo-repository.ts">
         <metrics statements="11" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -144,7 +144,7 @@
     </package>
     <package name="infra.db.mongodb.account-repository">
       <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="account.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/infra/db/mongodb/account-repository/account.ts">
+      <file name="account-mongo-repository.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/infra/db/mongodb/account-repository/account-mongo-repository.ts">
         <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -198,7 +198,7 @@
     </package>
     <package name="infra.db.mongodb.log-repository">
       <metrics statements="12" coveredstatements="12" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="log.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/infra/db/mongodb/log-repository/log.ts">
+      <file name="log-mongo-repository.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/infra/db/mongodb/log-repository/log-mongo-repository.ts">
         <metrics statements="12" coveredstatements="12" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -292,7 +292,7 @@
     </package>
     <package name="main.decorators">
       <metrics statements="19" coveredstatements="17" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <file name="log.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/decorators/log.ts">
+      <file name="log-mongo-repository.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/decorators/log-mongo-repository.ts">
         <metrics statements="19" coveredstatements="17" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -317,7 +317,7 @@
     </package>
     <package name="main.factories.login">
       <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="login-validation.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/login/login-validation.ts">
+      <file name="login-validation-factory.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/login/login-validation-factory.ts">
         <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -334,7 +334,7 @@
     </package>
     <package name="main.factories.signup">
       <metrics statements="34" coveredstatements="34" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
-      <file name="signup-validation.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/signup/signup-validation.ts">
+      <file name="signup-validation-factory.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/signup/signup-validation-factory.ts">
         <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -352,7 +352,7 @@
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
       </file>
-      <file name="signup.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/signup/signup.ts">
+      <file name="signup-factory.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/signup/signup-factory.ts">
         <metrics statements="19" coveredstatements="19" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -432,7 +432,7 @@
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
       </file>
-      <file name="login.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/presentation/controllers/login/login.ts">
+      <file name="login-controller.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/presentation/controllers/login/login-controller.ts">
         <metrics statements="33" coveredstatements="33" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -471,7 +471,7 @@
     </package>
     <package name="presentation.controllers.signup">
       <metrics statements="32" coveredstatements="23" conditionals="5" coveredconditionals="2" methods="3" coveredmethods="2"/>
-      <file name="SignUp.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/presentation/controllers/signup/SignUp.ts">
+      <file name="signup-controller.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/presentation/controllers/signup/signup-controller.ts">
         <metrics statements="27" coveredstatements="23" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>

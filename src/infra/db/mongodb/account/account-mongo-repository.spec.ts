@@ -1,5 +1,5 @@
 import { MongoHelper } from '../helpers/mongo-helper'
-import { AccountMongoRepository } from './account'
+import { AccountMongoRepository } from './account-mongo-repository'
 let accountCollection = null
 describe('Account mongo repository', () => {
   beforeAll(async () => {
@@ -42,7 +42,7 @@ describe('Account mongo repository', () => {
     const account = await sut.loadByEmail('any_email@mail.com')
     expect(account).toBeFalsy()
   })
-  test('should update the account access token on updateAccessTokenSuccess', async () => {
+  test('should update the account access token on updateAccessToken Success', async () => {
     const res = await accountCollection.insertOne({ name: 'valid_name', email: 'any_email@mail.com', password: 'pass' })
     const sut = makeSut()
     let account = await accountCollection.findOne({ _id: res.insertedId })

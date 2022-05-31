@@ -80,7 +80,7 @@ BRF:1
 BRH:0
 end_of_record
 TN:
-SF:src/data/usecases/add-account/db-add-account.ts
+SF:src/data/usecases/add-account/db-add-account-mongo-repository.ts
 FN:6,DbAddAccount
 FN:11,add
 FNF:2
@@ -140,7 +140,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:src/domain/models/account.ts
+SF:src/domain/models/account-mongo-repository.ts
 FN:1,(empty-report)
 FNF:1
 FNH:0
@@ -158,7 +158,7 @@ BRF:1
 BRH:0
 end_of_record
 TN:
-SF:src/domain/usecases/add-account.ts
+SF:src/domain/usecases/add-account-mongo-repository.ts
 FN:1,(empty-report)
 FNF:1
 FNH:0
@@ -229,7 +229,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:src/infra/db/mongodb/account-repository/account.ts
+SF:src/infra/db/mongodb/account-repository/account-mongo-repository.ts
 FN:7,add
 FNF:1
 FNH:1
@@ -308,7 +308,7 @@ BRF:7
 BRH:5
 end_of_record
 TN:
-SF:src/infra/db/mongodb/log-repository/log.ts
+SF:src/infra/db/mongodb/log-repository/log-mongo-repository.ts
 FN:5,logError
 FNF:1
 FNH:1
@@ -454,7 +454,7 @@ BRF:3
 BRH:3
 end_of_record
 TN:
-SF:src/main/decorators/log.ts
+SF:src/main/decorators/log-mongo-repository.ts
 FN:7,LogControllerDecorator
 FN:12,handle
 FNF:2
@@ -489,7 +489,7 @@ BRF:3
 BRH:2
 end_of_record
 TN:
-SF:src/main/factories/login/login-validation.ts
+SF:src/main/factories/login/login-validation-factory.ts
 FN:6,makeLoginValidation
 FNF:1
 FNH:1
@@ -513,7 +513,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:src/main/factories/signup/signup-validation.ts
+SF:src/main/factories/signup/signup-validation-factory.ts
 FN:9,makeSignupValidation
 FNF:1
 FNH:1
@@ -541,7 +541,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:src/main/factories/signup/signup.ts
+SF:src/main/factories/signup/signup-factory.ts
 FN:12,makeSignUpController
 FNF:1
 FNH:1
@@ -669,7 +669,7 @@ BRF:1
 BRH:0
 end_of_record
 TN:
-SF:src/presentation/controllers/login/login.ts
+SF:src/presentation/controllers/login/login-controller.ts
 FN:9,LoginController
 FN:14,handle
 FNF:2
@@ -722,7 +722,7 @@ BRF:7
 BRH:7
 end_of_record
 TN:
-SF:src/presentation/controllers/signup/SignUp.ts
+SF:src/presentation/controllers/signup/signup-controller.ts
 FN:8,SignUpController
 FN:13,handle
 FNF:2
