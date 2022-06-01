@@ -412,7 +412,7 @@
     </package>
     <package name="main.routes">
       <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="signup-routes.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/routes/signup-routes.ts">
+      <file name="login-routes.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/routes/login-routes.ts">
         <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
