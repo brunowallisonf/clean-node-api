@@ -10,7 +10,8 @@
     "test:unit": "npm test -- --watch -c ./jest-unit-config.js",
     "test:integration": "npm test -- --watch -c ./jest-integration-config.js",
     "test:ci": "npm test -- --coverage",
-    "build": "tsc"
+    "dev": "sucrase-node src/main/server.ts",
+    "build": "rimraf dist && node dist/main/server.js"
   },
   "keywords": [],
   "author": "",
