@@ -9,7 +9,7 @@ export const MongoHelper = {
     this.client = await MongoClient.connect(this.uri)
     this.isConnected = true
     this.client.on('topologyClosed', () => {
-      console.log('Mogodb connected')
+      console.log('Mogodb connected s')
       this.isConnected = false
     })
   },
