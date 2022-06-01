@@ -10,7 +10,7 @@
     "test:unit": "npm test -- --watch -c ./jest-unit-config.js",
     "test:integration": "npm test -- --watch -c ./jest-integration-config.js",
     "test:ci": "npm test -- --coverage",
-    "start": "sucrase-node src/main/server.ts"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
