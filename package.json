@@ -11,7 +11,8 @@
     "test:integration": "npm test -- --watch -c ./jest-integration-config.js",
     "test:ci": "npm test -- --coverage",
     "dev": "sucrase-node src/main/server.ts",
-    "build": "rimraf dist && node dist/main/server.js"
+    "build": "rimraf dist && tsc",
+    "start": "node src/main/server.ts"
   },
   "keywords": [],
   "author": "",
