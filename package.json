@@ -12,7 +12,7 @@
     "test:ci": "npm test -- --coverage",
     "dev": "sucrase-node src/main/server.ts",
     "build": "rimraf dist && tsc",
-    "start": "node src/main/server.ts"
+    "start": "node dist/main/server.ts"
   },
   "keywords": [],
   "author": "",

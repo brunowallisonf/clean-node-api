@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1654059260288" clover="3.2.0">
-  <project timestamp="1654059260288" name="All files">
+<coverage generated="1654059487333" clover="3.2.0">
+  <project timestamp="1654059487333" name="All files">
     <metrics statements="593" coveredstatements="466" conditionals="97" coveredconditionals="60" methods="70" coveredmethods="50" elements="760" coveredelements="576" complexity="0" loc="593" ncloc="593" packages="27" files="56" classes="56"/>
     <package name="data.protocols.criptography">
       <metrics statements="9" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0"/>
@@ -658,19 +658,19 @@
         <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
       </file>
       <file name="server-error.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/presentation/errors/server-error.ts">
         <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
       </file>
       <file name="unauthorized.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/presentation/errors/unauthorized.ts">
@@ -705,11 +705,11 @@
         <line num="16" count="2" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
         <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
