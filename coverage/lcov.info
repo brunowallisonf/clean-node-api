@@ -125,7 +125,7 @@ BRF:1
 BRH:0
 end_of_record
 TN:
-SF:src/data/usecases/add-account/db-add-account.ts
+SF:src/data/usecases/add-account/db-add-account-factory.ts
 FN:4,DbAddAccount
 FN:9,add
 FNF:2
@@ -650,7 +650,7 @@ BRF:3
 BRH:3
 end_of_record
 TN:
-SF:src/main/factories/login/login-factory.ts
+SF:src/main/factories/login/db-authentication-factory.ts
 FN:12,makeLoginController
 FNF:1
 FNH:1
@@ -708,7 +708,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:src/main/factories/signup/signup-factory.ts
+SF:src/main/factories/signup/signup-controller-factory.ts
 FN:12,makeSignUpController
 FNF:1
 FNH:1

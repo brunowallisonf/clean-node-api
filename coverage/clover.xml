@@ -67,7 +67,7 @@
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
       </file>
-      <file name="db-add-account.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/data/usecases/add-account/db-add-account.ts">
+      <file name="db-add-account-factory.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/data/usecases/add-account/db-add-account-factory.ts">
         <metrics statements="14" coveredstatements="14" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -418,7 +418,7 @@
     </package>
     <package name="main.factories.login">
       <metrics statements="33" coveredstatements="33" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
-      <file name="login-factory.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/login/login-factory.ts">
+      <file name="db-authentication-factory.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/login/db-authentication-factory.ts">
         <metrics statements="22" coveredstatements="22" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -460,7 +460,7 @@
     </package>
     <package name="main.factories.signup">
       <metrics statements="34" coveredstatements="34" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
-      <file name="signup-factory.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/signup/signup-factory.ts">
+      <file name="signup-controller-factory.ts" path="/home/bruno/Documents/courses/manguinho/clean-node-api/src/main/factories/signup/signup-controller-factory.ts">
         <metrics statements="19" coveredstatements="19" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
