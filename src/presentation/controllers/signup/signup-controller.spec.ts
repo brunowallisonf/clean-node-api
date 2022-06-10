@@ -4,7 +4,8 @@ import { Authentication, AuthenticationModel, EmailValidator, HttpRequest, Valid
 import { MissingParamError } from '../../errors/'
 import { AddAccount, AddAccountModel } from '../../../domain/usecases/add-account'
 import { AccountModel } from '../../../domain/models/account'
-import { serverError, badRequest, ok } from '../../helpers/http/http-helper'
+import { serverError, badRequest, ok, forbidden } from '../../helpers/http/http-helper'
+import { EmailInUseError } from '../../errors/email-in-use-error'
 const makeAuthenticatorStub = (): Authentication => {
   class AuthenticationStub implements Authentication {
     async auth (authentication: AuthenticationModel): Promise<string> {
@@ -105,10 +106,19 @@ describe('Signup controller', () => {
     const { sut } = makeSut()
     const httpRequest = makeHttpRequest()
     const httpResponse = await sut.handle(httpRequest)
-    console.log(httpResponse)
     const okResult = ok({ accessToken: 'token' })
     expect(httpResponse).toEqual(okResult)
   })
+
+  test('Should return 403 addAccount returns null', async () => {
+    const { sut, addAccountStub } = makeSut()
+    jest.spyOn(addAccountStub, 'add').mockResolvedValue(null)
+    const httpRequest = makeHttpRequest()
+    const httpResponse = await sut.handle(httpRequest)
+    const okResult = forbidden(new EmailInUseError())
+    expect(httpResponse).toEqual(okResult)
+  })
+
   test('Should call validation with correct values', async () => {
     const { sut, validationStub } = makeSut()
 
