@@ -1,11 +1,11 @@
 
 import { SignUpController } from './signup-controller'
 import { Authentication, AuthenticationModel, EmailValidator, HttpRequest, Validation } from './signup-protocols'
-import { MissingParamError } from '../../errors/'
-import { AddAccount, AddAccountModel } from '../../../domain/usecases/add-account'
-import { AccountModel } from '../../../domain/models/account'
-import { serverError, badRequest, ok, forbidden } from '../../helpers/http/http-helper'
-import { EmailInUseError } from '../../errors/email-in-use-error'
+import { MissingParamError } from '../../../errors'
+import { AddAccount, AddAccountModel } from '../../../../domain/usecases/add-account'
+import { AccountModel } from '../../../../domain/models/account'
+import { serverError, badRequest, ok, forbidden } from '../../../helpers/http/http-helper'
+import { EmailInUseError } from '../../../errors/email-in-use-error'
 const makeAuthenticatorStub = (): Authentication => {
   class AuthenticationStub implements Authentication {
     async auth (authentication: AuthenticationModel): Promise<string> {
